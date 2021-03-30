@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MyCPU_project.srcs/sim_1/new/ALU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/ALU_Controller.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/CPU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/CU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/EXU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/IDU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/IFU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/MEMU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/RAM.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/ROM.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/RegisterFile.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/testbench_CPU.vhd" \
+
+# Do not sort compile order
+nosort

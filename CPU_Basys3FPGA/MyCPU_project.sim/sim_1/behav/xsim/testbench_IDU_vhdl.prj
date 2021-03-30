@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MyCPU_project.srcs/sim_1/new/IDU.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/RegisterFile.vhd" \
+"../../../../MyCPU_project.srcs/sim_1/new/testbench_IDU.vhd" \
+
+# Do not sort compile order
+nosort

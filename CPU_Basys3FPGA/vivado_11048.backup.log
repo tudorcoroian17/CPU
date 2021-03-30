@@ -1,0 +1,892 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Dec 25 12:56:08 2020
+# Process ID: 11048
+# Current directory: C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9644 C:\Users\tudor\Tudor\3rdYearCS_I\6_StructureOfComputerSystems\Project\MyCPU_project\MyCPU_project.xpr
+# Log file: C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/vivado.log
+# Journal file: C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 858.430 ; gain = 186.691
+set_property top testbench_RF [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_RF' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_RF_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RegisterFile'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_RF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_RF'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_RF_behav xil_defaultlib.testbench_RF -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_RF_behav xil_defaultlib.testbench_RF -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_rf
+Built simulation snapshot testbench_RF_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_RF_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_RF_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec 25 13:06:34 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 13:06:34 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 901.016 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_RF_behav -key {Behavioral:sim_1:Functional:testbench_RF} -tclbatch {testbench_RF.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_RF.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_RF_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 916.574 ; gain = 15.559
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 931.531 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_RF' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_RF_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RegisterFile'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_RF_behav xil_defaultlib.testbench_RF -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_RF_behav xil_defaultlib.testbench_RF -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_rf
+Built simulation snapshot testbench_RF_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_RF_behav -key {Behavioral:sim_1:Functional:testbench_RF} -tclbatch {testbench_RF.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_RF.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_RF_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 931.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top testbench_ROM [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_ROM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_ROM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_ROM'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_ROM_behav xil_defaultlib.testbench_ROM -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_ROM_behav xil_defaultlib.testbench_ROM -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_rom
+Built simulation snapshot testbench_ROM_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_ROM_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.836 ; gain = 22.605
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 15:00:17 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 931.531 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_ROM_behav -key {Behavioral:sim_1:Functional:testbench_ROM} -tclbatch {testbench_ROM.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_ROM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_ROM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 931.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 931.531 ; gain = 0.000
+set_property top testbench_RAM [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_RAM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_RAM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_RAM'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_RAM_behav xil_defaultlib.testbench_RAM -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_RAM_behav xil_defaultlib.testbench_RAM -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_ram
+Built simulation snapshot testbench_RAM_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_RAM_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.805 ; gain = 23.340
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 15:08:08 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 931.531 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_RAM_behav -key {Behavioral:sim_1:Functional:testbench_RAM} -tclbatch {testbench_RAM.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_RAM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_RAM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 931.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 931.531 ; gain = 0.000
+set_property top testbench_CSSD [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_CSSD' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_CSSD_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_CSSD_behav xil_defaultlib.testbench_CSSD -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_CSSD_behav xil_defaultlib.testbench_CSSD -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_CSSD_behav -key {Behavioral:sim_1:Functional:testbench_CSSD} -tclbatch {testbench_CSSD.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_CSSD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_CSSD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 931.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 931.531 ; gain = 0.000
+set_property top testbench_ALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_ALU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_ALU'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_ALU_behav xil_defaultlib.testbench_ALU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_ALU_behav xil_defaultlib.testbench_ALU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_alu
+Built simulation snapshot testbench_ALU_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_ALU_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.855 ; gain = 23.508
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 15:56:20 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 931.531 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_ALU_behav -key {Behavioral:sim_1:Functional:testbench_ALU} -tclbatch {testbench_ALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_ALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_ALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 931.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 931.531 ; gain = 0.000
+set_property top testbench_ALUC [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_ALUC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_ALUC_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_ALUC_behav xil_defaultlib.testbench_ALUC -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_ALUC_behav xil_defaultlib.testbench_ALUC -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_ALUC_behav -key {Behavioral:sim_1:Functional:testbench_ALUC} -tclbatch {testbench_ALUC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_ALUC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_ALUC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 931.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 931.531 ; gain = 0.000
+set_property top testbench_IFU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_IFU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_IFU_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_IFU_behav xil_defaultlib.testbench_IFU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_IFU_behav xil_defaultlib.testbench_IFU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.IFU [ifu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_ifu
+Built simulation snapshot testbench_IFU_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_IFU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_IFU_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec 25 20:02:52 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 20:02:52 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 931.531 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_IFU_behav -key {Behavioral:sim_1:Functional:testbench_IFU} -tclbatch {testbench_IFU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_IFU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_IFU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 931.531 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 931.531 ; gain = 0.000
+set_property top testbench_IDU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_IDU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_IDU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/IDU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IDU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_IDU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_IDU'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_IDU_behav xil_defaultlib.testbench_IDU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_IDU_behav xil_defaultlib.testbench_IDU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 16 elements ; formal 'jump_address' expects 32 [C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_IDU.vhd:85]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbench_idu in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_IDU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_IDU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_IDU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_IDU'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_IDU_behav xil_defaultlib.testbench_IDU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_IDU_behav xil_defaultlib.testbench_IDU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.IDU [idu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_idu
+Built simulation snapshot testbench_IDU_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_IDU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_IDU_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec 25 20:18:45 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 20:18:45 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 940.789 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_IDU_behav -key {Behavioral:sim_1:Functional:testbench_IDU} -tclbatch {testbench_IDU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_IDU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_IDU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 940.789 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 940.789 ; gain = 0.000
+set_property top testbench_CU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_CU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_CU_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_CU_behav xil_defaultlib.testbench_CU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_CU_behav xil_defaultlib.testbench_CU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_CU_behav -key {Behavioral:sim_1:Functional:testbench_CU} -tclbatch {testbench_CU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_CU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_CU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 940.789 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 940.789 ; gain = 0.000
+set_property top testbench_EXU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_EXU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_EXU_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/EXU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EXU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.srcs/sim_1/new/testbench_EXU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_EXU'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_EXU_behav xil_defaultlib.testbench_EXU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_EXU_behav xil_defaultlib.testbench_EXU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.ALU_Controller [alu_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.EXU [exu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exu
+Built simulation snapshot testbench_EXU_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_EXU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_EXU_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec 25 20:29:30 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 20:29:30 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 942.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_EXU_behav -key {Behavioral:sim_1:Functional:testbench_EXU} -tclbatch {testbench_EXU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_EXU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_EXU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 942.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 942.906 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_EXU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_EXU_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_EXU_behav xil_defaultlib.testbench_EXU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_EXU_behav xil_defaultlib.testbench_EXU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_EXU_behav -key {Behavioral:sim_1:Functional:testbench_EXU} -tclbatch {testbench_EXU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_EXU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_EXU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 942.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top testbench_MEMU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_MEMU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_MEMU_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+"xelab -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_MEMU_behav xil_defaultlib.testbench_MEMU -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7036aca162e4432b87dd6df9847f2f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_MEMU_behav xil_defaultlib.testbench_MEMU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.MEMU [memu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_memu
+Built simulation snapshot testbench_MEMU_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_MEMU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim/xsim.dir/testbench_MEMU_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec 25 20:32:56 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 25 20:32:56 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 942.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tudor/Tudor/3rdYearCS_I/6_StructureOfComputerSystems/Project/MyCPU_project/MyCPU_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_MEMU_behav -key {Behavioral:sim_1:Functional:testbench_MEMU} -tclbatch {testbench_MEMU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbench_MEMU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_MEMU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 942.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 942.906 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 25 20:36:23 2020...
